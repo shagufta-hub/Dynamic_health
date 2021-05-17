@@ -1,45 +1,50 @@
 
-<html>
+<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+                    <h3>Register Your Account</h3>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="User Name *" value="" />
+                  </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                      </div>
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Register" />
+                        </div>
+                        <div class="form-group">
+                            <!-- <a href="#" class="btnForgetPwd">Forget Password?</a> -->
+                        </div>
+                    
+                </div>
+                <div class="col-md-6 login-form-2">
+                    <div class="login-logo">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                    </div>
+                    <h3>Login Here</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Login" />
+                        </div>
+                        <div class="form-group">
 
-<body>
-
-<h2>Login Form</h2>
-<div class="card">
-    <div class="row">
-    <div class="col-md-4">
-
-    </div>
-    <div class="col-md-4">
-        <div class="imgcontainer">
-            <img src="img_avatar2.png" alt="Avatar" class="avatar">
-          </div>
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" [(ngModel)]="loginreq.userName" required>
-        
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password"[(ngModel)]="loginreq.userPassword" required>
-                
-            <button type="submit" (click)="login()">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-        
-        
-          <div  style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-    </div>
-    <div class="col-md-4">
-
-    </div>
-    </div>
-
-</div>
- 
-
-
-
-
-</body>
-</html>
+                            <a href="#" class="btnForgetPwd" value="Login">Forget Password?</a>
+                        </div>
+                        <div class="form-group" style="height: 60px;">
+     
+                          <!-- <a href="#" class="btnForgetPwd" value="Login">Forget Password?</a> -->
+                      </div>
+                </div>
+            </div>
+        </div>

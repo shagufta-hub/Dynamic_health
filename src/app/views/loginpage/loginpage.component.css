@@ -1,62 +1,55 @@
-
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+.login-container{
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+.login-logo{
+  position: relative;
+  margin-left: -41.5%;
 }
-
-button:hover {
-  opacity: 0.8;
+.login-logo img{
+  position: absolute;
+  width: 20%;
+  margin-top: 19%;
+  background: #282726;
+  border-radius: 4.5rem;
+  padding: 5%;
 }
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+.login-form-1{
+  padding: 9%;
+  background:#282726;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
-
-.imgcontainer {
+.login-form-1 h3{
   text-align: center;
-  margin: 24px 0 12px 0;
+  margin-bottom:12%;
+  color:#fff;
 }
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
+.login-form-2{
+  padding: 9%;
+  background: #f05837;
+  height: 20%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
-
-.container {
-  padding: 16px;
+.login-form-2 h3{
+  text-align: center;
+  margin-bottom:12%;
+  color: #fff;
 }
-
-span.psw {
-  float: right;
-  padding-top: 16px;
+.btnSubmit{
+  font-weight: 600;
+  width: 50%;
+  color: #282726;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  padding:2%;
 }
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
+.btnForgetPwd{
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btnForgetPwd:hover{
+  text-decoration:none;
+  color:#fff;
 }
