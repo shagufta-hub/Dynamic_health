@@ -14,6 +14,8 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginpageComponent } from './views/loginpage/loginpage.component';
 import { RegisterpageComponent } from './views/registerpage/registerpage.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
+
 
 @NgModule({
   imports: [
@@ -30,7 +32,9 @@ import { RegisterpageComponent } from './views/registerpage/registerpage.compone
     AppComponent,
     AdminLayoutComponent,
     LoginpageComponent,
-    RegisterpageComponent
+    RegisterpageComponent,
+    DashboardComponent,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

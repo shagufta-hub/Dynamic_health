@@ -1,1 +1,119 @@
-<p>registerpage works!</p>
+<!-- <ngx-spinner size="medium" color="#fff" type="line-scale-party">
+    <p style="font-size: 20px; color: rgb(255, 255, 255)">Loading...</p>
+  </ngx-spinner> -->
+
+                <div style="background-image: linear-gradient( 112.6deg,  rgba(56,24,40,1) -10.7%, rgba(23,148,185,1) 100.2% );
+               
+               
+                height: 100vh;  background-size: cover;">
+                
+  
+      <div class="container mt--12">
+        <div class="row" >
+          <div  style="margin: auto;max-width: 60rem;">
+            <div class="card  shadow border-0" style="background-image: linear-gradient( 359.3deg,  rgba(196,214,252,1) 1%, rgba(187,187,187,0) 70.9% );">
+                <div class="card-header">
+              <div class="text-muted text-center mt-5 mb-3" style="font-family: 'Merriweather', serif;"><h1>Register</h1>
+              </div>
+              </div>
+      
+              <div class="card-body " style="margin: 50px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="mb-1">
+                              <h6 class="mb-0 text-sm">Email Id</h6>
+                          </label>
+                            <div class="input-group input-group-alternative"  style="border: 1px solid lightgrey;">
+                             
+                              <input class="form-control" placeholder="User Id" type="text" [(ngModel)]="createPsd.userId">
+                            </div>
+                          </div>
+                            <div class="form-group">
+                              <label class="mb-1">
+                                <h6 class="mb-0 text-sm">New Password</h6>
+                            </label>
+                              <div class="input-group input-group-alternative"  style="border: 1px solid lightgrey;">
+                             
+                                <input class="form-control" placeholder="New Password" type="password" [(ngModel)]="createPsd.pwd">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Confirm Password</h6>
+                            </label>
+                              <div class="input-group input-group-alternative" style="border: 1px solid lightgrey;">
+                              
+                                <input class="form-control" placeholder="Confirm Password" type="password" [(ngModel)]="confirmpsd">
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="mb-1">
+                              <h6 class="mb-0 text-sm">Email Id</h6>
+                          </label>
+                            <div class="input-group input-group-alternative"  style="border: 1px solid lightgrey;">
+                            
+                              <input class="form-control" placeholder="User Id" type="text" [(ngModel)]="createPsd.userId">
+                            </div>
+                          </div>
+                            <div class="form-group">
+                              <label class="mb-1">
+                                <h6 class="mb-0 text-sm">New Password</h6>
+                            </label>
+                              <div class="input-group input-group-alternative"  style="border: 1px solid lightgrey;">
+                         
+                                <input class="form-control" placeholder="New Password" type="password" [(ngModel)]="createPsd.pwd">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Confirm Password</h6>
+                            </label>
+                              <div class="input-group input-group-alternative" style="border: 1px solid lightgrey;">
+                              
+                                <input class="form-control" placeholder="Confirm Password" type="password" [(ngModel)]="confirmpsd">
+                              </div>
+                            </div>
+                       
+                          
+                    </div>
+                 
+                </div>
+                <div class="row " style="padding-top: 10px; padding-bottom: 10px;">
+                    <button type="button" class="btn btn-grad my-3 mx-auto" (click)="createpsd()" style="margin: auto;">Submit</button>
+                  </div>
+          
+                  <div class="row mt-3">
+            
+                  </div>
+              </div>
+            </div>
+    
+           
+          </div>
+    </div>
+    </div>    </div>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+        </style>
+  
+  
+       <!-- popupPasswordModel -->
+  
+       <div class="modal fade" bsModal #popupPasswordModel="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1"
+       role="dialog" aria-labelledby="create-product" >
+       <div   class="popupwidth">
+        <div [ngClass]="popupNgClass">
+          <button type="button" class="close pull-right"  aria-label="Close" *ngIf="!success" (click)="popupClose()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+         <button type="button" class="close pull-right"  aria-label="Close" *ngIf="success" routerLink="/">
+           <span aria-hidden="true">&times;</span>
+         </button>
+         <strong >{{message}}</strong>
+        </div>
+           <!-- <div><button class="btn btn-success"  (click)="success()"> Ok</button></div> -->
+       </div>
+       </div>
