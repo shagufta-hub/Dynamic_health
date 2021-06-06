@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { ROUTES } from '../sidebarlayout/sidebarlayout.component';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-headerlayout',
@@ -13,7 +14,7 @@ export class HeaderlayoutComponent implements OnInit {
   private toggleButton: any;
   private sidebarVisible: boolean;
 
-  constructor(location: Location,  private element: ElementRef) {
+  constructor(location: Location,  private element: ElementRef,private _router:Router) {
     this.location = location;
         this.sidebarVisible = false;
   }
@@ -61,6 +62,9 @@ export class HeaderlayoutComponent implements OnInit {
         }
     }
     return 'Dashboard';
+  }
+  dologout(){
+    this._router.navigate(['/login']);
   }
 
 }

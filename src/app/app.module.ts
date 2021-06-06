@@ -12,9 +12,10 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { LoginpageComponent } from './views/loginpage/loginpage.component';
 import { RegisterpageComponent } from './views/registerpage/registerpage.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { LbdModule } from './lbd/lbd.module';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 
 @NgModule({
@@ -26,14 +27,13 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
     NavbarModule,
     FooterModule,
     SidebarModule,
-    AppRoutingModule
+    AppRoutingModule,LbdModule
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    LoginpageComponent,
-    RegisterpageComponent,
-    DashboardComponent,
+    
+   LoginpageComponent
 
   ],
   providers: [],

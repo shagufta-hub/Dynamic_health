@@ -11,11 +11,18 @@ const routes: Routes =[
     path:'',
     loadChildren: ()=> import('./views/layout/layout.module').then(m => m.LayoutModule)
   },
+  
   {
     path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full',
-  }, {
+  }, 
+  {
+    path:'login',
+    loadChildren:()=>import('../app/loginpage/loginpage.module').then(m=>m.LoginpageModule)
+  },
+
+  {
     path: '',
     component: AdminLayoutComponent,
     children: [

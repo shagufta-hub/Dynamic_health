@@ -1,9 +1,9 @@
 
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { LbdChartComponent } from './lbd-chart/lbd-chart.component';
+import { ChartType, LbdChartComponent } from './lbd-chart/lbd-chart.component';
 
 @NgModule({
   imports: [
@@ -15,8 +15,10 @@ import { LbdChartComponent } from './lbd-chart/lbd-chart.component';
     LbdChartComponent
 
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [
     LbdChartComponent
-  ]
+  ],
+  
 })
 export class LbdModule { }
